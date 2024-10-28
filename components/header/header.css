@@ -1,0 +1,60 @@
+.header {
+  background-color: #373f68;
+  display: flex;
+  gap: 38px;
+  justify-content: space-between;
+  padding: 23px 24px;
+  align-items: center;
+  width: 825px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-radius: 10px;
+
+  .suggestions-counter {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    p {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26.01px;
+      letter-spacing: -0.25px;
+    }
+  }
+
+  .short-by {
+    margin-right: auto;
+
+    p {
+      color: #f2f4fe;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20.23px;
+      text-align: left;
+    }
+
+    .filter-options {
+      display: none;
+
+      p {
+        display: flex;
+        align-items: center;
+        color: #373f68;
+      }
+    }
+
+    &:hover .filter-options {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: absolute;
+      padding: 12px;
+      background-color: #ffffff;
+      box-shadow: 0px 10px 20px 0px #48549f40;
+      border-radius: 8px;
+    }
+  }
+}
