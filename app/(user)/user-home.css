@@ -6,81 +6,50 @@
   display: flex;
 }
 
-@media(width >= 768px) {
-  .empty-container {
-      margin-top: 40px;
-      margin-inline: 39px;
-  }
-}
-
-@media(width >= 1110px) {
-  .container {
-      display: flex;
-      justify-content: center;
-
-      .sidebar-tablet {
-          width: 255px;
-          display: flex;
-          flex-direction: column;
-          margin: 40px 0px;
-
-          .texts {
-          width: 255px;
-          }
-
-          .roadmap {
-          width: 255px;
-          }
-      }
-
-      .main {
-          width: 825px;
-      }
-  }
-}
-
 .empty-container {
   background-color: #FFFFFF;
   border-radius: 10px;
-  padding: 76px 25px;
+  width: 825px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 111px 209px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 53px;
   align-items: center;
-  gap: 40px;
-  margin-top: 32px;
-  margin-inline: 24px;
 
   .empty-texts {
-      text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
       
-      h3 {
-          color: #3A4374;
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 26.01px;
-          letter-spacing: -0.25px;
-          margin-bottom: 14px;
-      }
-
-      p {
-          color: #647196;
-          font-size: 13px;
-          font-weight: 400;
-          line-height: 18.79px;
-          width: 278px;
-      }
-  }
-
-  .add-feedback-button button {
-      background-color: #AD1FEA;
-      color: #F2F4FE;
-      border-radius: 10px;
-      padding: 10px 16px;
-      border: none;
-      font-size: 13px;
+    h3 {
+      color: #3A4374;
+      font-size: 24px;
       font-weight: 700;
-      line-height: 18.79px;
+      line-height: 34.68px;
+      letter-spacing: -0.3333333432674408px;
+      text-align: center;
+    }
+
+    p {
+      color: #647196;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23.12px;
+      text-align: center;
+    }
   }
 }
 
+.card-link {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  width: 1110px;
+  margin: 32px auto;
+}
