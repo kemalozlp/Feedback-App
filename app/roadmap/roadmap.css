@@ -1,0 +1,37 @@
+.roadmap-header {
+  background-color: #373f68;
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 32px;
+  border-radius: 10px;
+  margin: 48px auto;
+  align-items: center;
+
+  .header-navigation {
+    a {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border: none;
+      background-color: transparent;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20.23px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .roadmap-title {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34.68px;
+      letter-spacing: -0.3333333432674408px;
+    }
+  }
+}
