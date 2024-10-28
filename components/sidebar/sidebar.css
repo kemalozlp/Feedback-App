@@ -1,0 +1,146 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.frontend-mentor {
+  background: radial-gradient(
+    128.88% 128.88% at 103.9% -10.39%,
+    #e84d70 0%,
+    #a337f6 53.09%,
+    #28a7ed 100%
+  );
+  width: 255px;
+  height: 137px;
+  border-radius: 10px;
+  padding: 62px 0px 0px 24px;
+}
+
+.texts {
+  h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28.9px;
+    letter-spacing: -0.25px;
+  }
+
+  p {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21.68px;
+  }
+}
+
+.categories {
+  background-color: #ffffff;
+  width: 255px;
+  height: 166px;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  .category-all {
+    color: #ffffff;
+    background-color: #4661e6;
+    border: none;
+    padding: 5px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .category-item {
+    color: #4661e6;
+    background-color: #f2f4ff;
+    border: none;
+    padding: 5px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .category-item:hover {
+    background-color: #cfd7ff;
+  }
+}
+
+.roadmap-box {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 19px 24px;
+    width: 255px;
+    height: 178px;
+
+    .roadmap-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            color: #3A4374;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26.01px;
+            letter-spacing: -0.25px;
+        }
+
+        a {
+            color: #4661E6;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 18.79px;
+        }
+
+        a:hover {
+          color: #8397F8;
+        }
+    }
+
+    .roadmap-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        li {
+            color: #647196;
+            display: flex;
+            gap: 16px;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 23.12px;
+
+            p {
+                margin-right: auto;
+            }
+            
+            span {
+                color: #647196;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 23.12px;
+            }
+        }
+
+        .planned-box span:nth-child(1) {
+            color: #F49F85;
+        }
+
+        .in-progress-box span:nth-child(1) {
+            color: #AD1FEA;
+        }
+
+        .live-box span:nth-child(1) {
+            color: #62BCFA;
+        }
+    }
+}
