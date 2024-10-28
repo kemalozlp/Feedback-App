@@ -1,0 +1,133 @@
+.new-feedback {
+  .circle {
+    background: radial-gradient(
+        128.88% 128.88% at 103.9% -10.39%,
+        #e84d70 0%,
+        #a337f6 53.09%,
+        #28a7ed 100%
+      );
+    color: #ffffff;
+    padding: 14px;
+    width: 52px;
+    border-radius: 50%;
+    position: relative;
+    top: 28px;
+    left: 42px;
+  }
+
+  form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 52px 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 500px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: block;
+      width: 8px;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #AD1FE9;
+      border-radius: 4px;
+    }
+
+    h1 {
+      color: #3a4374;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34.68px;
+      letter-spacing: -0.3333333432674408px;
+    }
+
+    .form-item {
+      label {
+        color: #3a4374;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20.23px;
+        letter-spacing: -0.1944444477558136px;
+      }
+
+      p {
+        color: #647196;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20.23px;
+        margin-bottom: 16px;
+      }
+
+      input {
+        border: none;
+        background-color: #f7f8fd;
+        border-radius: 5px;
+        width: 456px;
+        height: 48px;
+      }
+
+      /* input:focus {
+        
+      } */
+
+      select {
+        border: none;
+        background-color: #f7f8fd;
+        border-radius: 5px;
+        width: 456px;
+        height: 48px;
+      }
+
+
+      &:nth-child(4) input {
+        min-height: 120px;
+      }
+    }
+
+    .form-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: end;
+
+      .add-new {
+        background-color: #ad1fea;
+        color: #f2f4fe;
+        border: none;
+        border-radius: 10px;
+        padding: 12px 24px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20.23px;
+        cursor: pointer;
+      }
+
+      .add-new:hover {
+        background-color: #C75AF6;
+      }
+
+      .cancel {
+        background-color: #3a4374;
+        color: #f2f4fe;
+        border: none;
+        border-radius: 10px;
+        padding: 12px 24px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20.23px;
+        cursor: pointer;
+      }
+
+      .cancel:hover {
+        background-color: #656EA3;
+      }
+    }
+  }
+}
