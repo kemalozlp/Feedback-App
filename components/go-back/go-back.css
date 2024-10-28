@@ -1,0 +1,21 @@
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #4661e6;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+
+  p {
+    color: #647196;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20.23px;
+  }
+}
+
+.back-button:hover {
+  text-decoration: underline #647196;
+}
