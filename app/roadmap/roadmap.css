@@ -35,3 +35,9 @@
     }
   }
 }
+
+@media(width <= 1190px) {
+  .roadmap-header {
+    width: 689px;
+  }
+}
