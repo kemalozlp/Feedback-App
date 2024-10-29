@@ -60,3 +60,9 @@
     }
   }
 }
+
+@media(width <= 1190px) {
+  .add-comment {
+    width: 689px;
+  }
+}
