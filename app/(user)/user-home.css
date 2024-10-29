@@ -7,7 +7,7 @@
 }
 
 .empty-container {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
   width: 825px;
   height: 600px;
@@ -23,9 +23,9 @@
     flex-direction: column;
     gap: 16px;
     text-align: center;
-      
+
     h3 {
-      color: #3A4374;
+      color: #3a4374;
       font-size: 24px;
       font-weight: 700;
       line-height: 34.68px;
@@ -52,4 +52,16 @@
   gap: 30px;
   width: 1110px;
   margin: 32px auto;
+}
+
+@media (width <= 1190px) {
+  .container {
+    width: 689px;
+    flex-direction: column;
+  }
+
+  .empty-container {
+    width: 689px;
+    padding: 110px 140px;
+  }
 }
