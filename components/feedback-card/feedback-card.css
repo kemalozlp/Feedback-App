@@ -69,3 +69,10 @@
     }
   }
 }
+
+@media(width <= 1190px) {
+  .card {
+    margin: 0 auto;
+    width: 689px;
+  }
+}
