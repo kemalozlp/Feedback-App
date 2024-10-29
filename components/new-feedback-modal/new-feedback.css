@@ -131,3 +131,11 @@
     }
   }
 }
+
+@media (width <= 1190px) {
+  .new-feedback {
+    form {
+      height: 657px;
+    }
+  }
+}

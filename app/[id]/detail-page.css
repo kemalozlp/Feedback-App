@@ -1,20 +1,30 @@
 .details-header {
-    width: 825px;
-    margin: 32px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 825px;
+  margin: 32px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .detail-page {
-    width: 825px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-bottom: 137px;
+  width: 825px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 137px;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
+}
+
+@media (width <= 1190px) {
+  .details-header {
+    width: 689px;
+  }
+
+  .detail-page {
+    width: 689px;
+  }
 }

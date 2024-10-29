@@ -119,3 +119,9 @@
     border-bottom: none;
   }
 }
+
+@media(width <= 1190px) {
+  .comments-list {
+    width: 689px;
+  }
+}

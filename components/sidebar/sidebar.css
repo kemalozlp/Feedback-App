@@ -144,3 +144,27 @@
         }
     }
 }
+
+@media(width <= 1190px) {
+  .sidebar {
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .frontend-mentor {
+    width: 223px;
+    height: 178px;
+    padding: 103px 0px 0px 24px;
+  }
+
+  .categories {
+    width: 223px;
+    height: 178px;
+  }
+
+  .roadmap-box {
+    width: 223px;
+    height: 178px;
+  }
+}

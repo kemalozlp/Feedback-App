@@ -5,6 +5,10 @@
   gap: 30px;
 }
 
+.roadmap-navigation-mobile {
+  display: none;
+}
+
 .planned {
   display: flex;
   flex-direction: column;
@@ -18,7 +22,7 @@
       line-height: 26.01px;
       letter-spacing: -0.25px;
     }
-  
+
     p {
       color: #647196;
       font-size: 13px;
@@ -26,7 +30,7 @@
       line-height: 18.79px;
     }
   }
-  
+
   .roadmap-card {
     cursor: pointer;
     background-color: #ffffff;
@@ -34,10 +38,10 @@
     padding: 24px;
     border-radius: 10px;
     width: 350px;
-  
+
     .status {
       margin-bottom: 15px;
-  
+
       p {
         color: #647196;
         font-size: 16px;
@@ -45,16 +49,16 @@
         line-height: 23.12px;
         display: flex;
         gap: 16px;
-  
+
         span {
           color: #f49f85;
         }
       }
     }
-  
+
     .card-texts {
       margin-bottom: 16px;
-  
+
       .card-detail {
         color: #3a4374;
         font-size: 18px;
@@ -63,7 +67,7 @@
         letter-spacing: -0.25px;
         text-decoration: none;
       }
-  
+
       p {
         color: #647196;
         font-size: 16px;
@@ -71,7 +75,7 @@
         line-height: 23.12px;
       }
     }
-  
+
     .card-category {
       background-color: #f2f4ff;
       color: #4661e6;
@@ -80,12 +84,12 @@
       display: inline-block;
       margin-bottom: 16px;
     }
-  
+
     .like-and-comments {
       display: flex;
       justify-content: space-between;
       align-items: center;
-  
+
       .likes {
         display: flex;
         align-items: center;
@@ -95,7 +99,7 @@
         padding: 6px 13px;
         gap: 10px;
         border: none;
-  
+
         p {
           color: #3a4374;
           font-size: 13px;
@@ -106,24 +110,24 @@
       }
 
       .likes:hover {
-        background-color: #CFD7FF;
+        background-color: #cfd7ff;
       }
 
       .select-btn {
-        background-color: #4661E6;
-        color: #FFFFFF;
+        background-color: #4661e6;
+        color: #ffffff;
 
         p {
-        color: #FFFFFF;
+          color: #ffffff;
         }
       }
-  
+
       .comments {
         display: flex;
         align-items: center;
         gap: 4px;
         color: #cdd2ee;
-  
+
         p {
           color: #3a4374;
           font-size: 16px;
@@ -149,7 +153,7 @@
       line-height: 26.01px;
       letter-spacing: -0.25px;
     }
-  
+
     p {
       color: #647196;
       font-size: 13px;
@@ -157,18 +161,18 @@
       line-height: 18.79px;
     }
   }
-  
+
   .roadmap-card {
     cursor: pointer;
     background-color: #ffffff;
-    border-top: 10px solid #AD1FEA;
+    border-top: 10px solid #ad1fea;
     padding: 24px;
     border-radius: 10px;
     width: 350px;
-  
+
     .status {
       margin-bottom: 15px;
-  
+
       p {
         color: #647196;
         font-size: 16px;
@@ -176,16 +180,16 @@
         line-height: 23.12px;
         display: flex;
         gap: 16px;
-  
+
         span {
-          color: #AD1FEA;
+          color: #ad1fea;
         }
       }
     }
-  
+
     .card-texts {
       margin-bottom: 16px;
-  
+
       .card-detail {
         color: #3a4374;
         font-size: 18px;
@@ -194,7 +198,7 @@
         letter-spacing: -0.25px;
         text-decoration: none;
       }
-  
+
       p {
         color: #647196;
         font-size: 16px;
@@ -202,7 +206,7 @@
         line-height: 23.12px;
       }
     }
-  
+
     .card-category {
       background-color: #f2f4ff;
       color: #4661e6;
@@ -211,12 +215,12 @@
       display: inline-block;
       margin-bottom: 16px;
     }
-  
+
     .like-and-comments {
       display: flex;
       justify-content: space-between;
       align-items: center;
-  
+
       .likes {
         display: flex;
         align-items: center;
@@ -226,7 +230,7 @@
         padding: 6px 13px;
         gap: 10px;
         border: none;
-  
+
         p {
           color: #3a4374;
           font-size: 13px;
@@ -237,24 +241,24 @@
       }
 
       .likes:hover {
-        background-color: #CFD7FF;
+        background-color: #cfd7ff;
       }
 
       .select-btn {
-        background-color: #4661E6;
-        color: #FFFFFF;
+        background-color: #4661e6;
+        color: #ffffff;
 
         p {
-        color: #FFFFFF;
+          color: #ffffff;
         }
       }
-  
+
       .comments {
         display: flex;
         align-items: center;
         gap: 4px;
         color: #cdd2ee;
-  
+
         p {
           color: #3a4374;
           font-size: 16px;
@@ -280,7 +284,7 @@
       line-height: 26.01px;
       letter-spacing: -0.25px;
     }
-  
+
     p {
       color: #647196;
       font-size: 13px;
@@ -288,18 +292,18 @@
       line-height: 18.79px;
     }
   }
-  
+
   .roadmap-card {
     cursor: pointer;
     background-color: #ffffff;
-    border-top: 10px solid #62BCFA;
+    border-top: 10px solid #62bcfa;
     padding: 24px;
     border-radius: 10px;
     width: 350px;
-  
+
     .status {
       margin-bottom: 15px;
-  
+
       p {
         color: #647196;
         font-size: 16px;
@@ -307,16 +311,16 @@
         line-height: 23.12px;
         display: flex;
         gap: 16px;
-  
+
         span {
-          color: #62BCFA;
+          color: #62bcfa;
         }
       }
     }
-  
+
     .card-texts {
       margin-bottom: 16px;
-  
+
       .card-detail {
         color: #3a4374;
         font-size: 18px;
@@ -325,7 +329,7 @@
         letter-spacing: -0.25px;
         text-decoration: none;
       }
-  
+
       p {
         color: #647196;
         font-size: 16px;
@@ -333,7 +337,7 @@
         line-height: 23.12px;
       }
     }
-  
+
     .card-category {
       background-color: #f2f4ff;
       color: #4661e6;
@@ -342,12 +346,12 @@
       display: inline-block;
       margin-bottom: 16px;
     }
-  
+
     .like-and-comments {
       display: flex;
       justify-content: space-between;
       align-items: center;
-  
+
       .likes {
         display: flex;
         align-items: center;
@@ -357,7 +361,7 @@
         padding: 6px 13px;
         gap: 10px;
         border: none;
-  
+
         p {
           color: #3a4374;
           font-size: 13px;
@@ -368,24 +372,24 @@
       }
 
       .likes:hover {
-        background-color: #CFD7FF;
+        background-color: #cfd7ff;
       }
 
       .select-btn {
-        background-color: #4661E6;
-        color: #FFFFFF;
+        background-color: #4661e6;
+        color: #ffffff;
 
         p {
-        color: #FFFFFF;
+          color: #ffffff;
         }
       }
-  
+
       .comments {
         display: flex;
         align-items: center;
         gap: 4px;
         color: #cdd2ee;
-  
+
         p {
           color: #3a4374;
           font-size: 16px;
@@ -401,7 +405,188 @@
 .roadmap-card:hover {
   .card-texts {
     .card-detail {
-      color: #4661E6;
+      color: #4661e6;
+    }
+  }
+}
+
+@media (width <= 1190px) {
+  .roadmap-lists {
+    width: 689px;
+    gap: 10px;
+  }
+
+  .planned {
+    gap: 16px;
+
+    .roadmap-card {
+      padding: 20px;
+      width: 223px;
+
+      .status {
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18.79px;
+          display: flex;
+          gap: 16px;
+        }
+      }
+
+      .card-texts {
+        margin-bottom: 16px;
+
+        .card-detail {
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 18.79px;
+          letter-spacing: -0.1805555522441864px;
+        }
+
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18.79px;
+        }
+      }
+
+      .card-category {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 18.79px;
+      }
+    }
+  }
+
+  .in-progress {
+    gap: 16px;
+
+    .roadmap-card {
+      padding: 20px;
+      width: 223px;
+
+      .status {
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18.79px;
+          display: flex;
+          gap: 16px;
+        }
+      }
+
+      .card-texts {
+        margin-bottom: 16px;
+
+        .card-detail {
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 18.79px;
+          letter-spacing: -0.1805555522441864px;
+        }
+
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18.79px;
+        }
+      }
+
+      .card-category {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 18.79px;
+      }
+    }
+  }
+
+  .live {
+    gap: 16px;
+
+    .roadmap-card {
+      padding: 20px;
+      width: 223px;
+
+      .status {
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18.79px;
+          display: flex;
+          gap: 16px;
+        }
+      }
+
+      .card-texts {
+        margin-bottom: 16px;
+
+        .card-detail {
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 18.79px;
+          letter-spacing: -0.1805555522441864px;
+        }
+
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18.79px;
+        }
+      }
+
+      .card-category {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 18.79px;
+      }
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .roadmap-lists {
+    width: 327px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .roadmap-navigation-mobile {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    border-bottom: 1px solid #8c92b3;
+
+    button {
+      border: none;
+      background-color: transparent;
+      padding: 24px 12px;
+      border-bottom: 2px solid transparent;
+
+      &.active {
+        border-bottom: 4px solid #ad1fea;
+      }
+    }
+  }
+
+  .planned {
+    .roadmap-card {
+      padding: 24px;
+      width: 327px;
+    }
+  }
+
+  .in-progress {
+    .roadmap-card {
+      padding: 24px;
+      width: 327px;
+    }
+  }
+
+  .live {
+    .roadmap-card {
+      padding: 24px;
+      width: 327px;
     }
   }
 }

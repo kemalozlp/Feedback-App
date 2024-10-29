@@ -58,3 +58,10 @@
     }
   }
 }
+
+@media(width <= 1190px) {
+  .header {
+    width: 689px;
+    height: 79px;
+  }
+}
