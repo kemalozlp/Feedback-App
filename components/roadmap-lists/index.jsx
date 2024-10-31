@@ -21,6 +21,27 @@ export default function RoadmapLists() {
 
   return (
     <div className="roadmap-section">
+      <div className="roadmap-navigation-mobile">
+        <button
+          onClick={() => setSituation("planned")}
+          className={situation === "planned" ? "active" : ""}
+        >
+          Planned <span>2</span>
+        </button>
+        <button
+          onClick={() => setSituation("progress")}
+          className={situation === "progress" ? "active" : ""}
+        >
+          In-Progress <span>3</span>
+        </button>
+        <button
+          onClick={() => setSituation("live")}
+          className={situation === "live" ? "active" : ""}
+        >
+          Live <span>1</span>
+        </button>
+      </div>
+
       <div className="roadmap-lists">
         <div className="planned">
           <div className="planned-texts">
@@ -67,7 +88,7 @@ export default function RoadmapLists() {
             </div>
           </div>
         </div>
-
+        
         <div className="in-progress">
           <div className="in-progress-texts">
             <h3>
