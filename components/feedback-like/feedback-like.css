@@ -1,40 +1,40 @@
-.like-and-comments {
+.likes {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 10px;
+  color: #4661e6;
+  background-color: #f2f4fe;
+  padding: 6px 13px;
+  gap: 4px;
+  border: none;
+  flex-direction: column;
+  cursor: pointer;
 
-  .likes {
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    color: #4661e6;
-    background-color: #f2f4fe;
-    padding: 6px 13px;
-    gap: 4px;
-    border: none;
-    flex-direction: column;
-    cursor: pointer;
-    
-    p {      
-      color: #3a4374;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 18.79px;
-      letter-spacing: -0.1805555522441864px;
-    }
-  }
-
-  .likes:hover {
-    background-color: #CFD7FF;
-  }
-
-  .select-btn {
-    background-color: #4661E6;
-    color: #FFFFFF;
-
-    p {      
-      color: #FFFFFF;
-    }
+  p {
+    color: #3a4374;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18.79px;
+    letter-spacing: -0.1805555522441864px;
   }
 }
 
+.likes:hover {
+  background-color: #cfd7ff;
+}
+
+.select-btn {
+  background-color: #4661e6;
+  color: #ffffff;
+
+  p {
+    color: #ffffff;
+  }
+}
+
+@media (width <= 768px) {
+  .likes {
+    flex-direction: row;
+  }
+}

@@ -8,7 +8,6 @@
   width: 825px;
   height: 72px;
   margin: 0 auto;
-  margin-bottom: 24px;
   border-radius: 10px;
 
   .suggestions-counter {
@@ -63,5 +62,17 @@
   .header {
     width: 689px;
     height: 79px;
+  }
+}
+
+@media(width <= 768px) {
+  .header {
+    width: 100%;
+    height: 56px;
+    border-radius: 0;
+
+    .suggestions-counter {
+      display: none;
+    }
   }
 }
