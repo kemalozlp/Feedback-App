@@ -4,9 +4,8 @@ import AddFeedbackButton from "@/components/add-feedback-buttons";
 import SideBar from "@/components/sidebar";
 import "./user-home.css";
 import Card from "@/components/feedback-card";
-import Link from "next/link";
 
-export default function UserHome() {
+export default async function UserHome() {
   return (
     <div className="container">
       <SideBar />
