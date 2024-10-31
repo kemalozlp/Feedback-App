@@ -41,3 +41,27 @@
     width: 689px;
   }
 }
+
+@media (width <= 768px) {
+  .roadmap-header {
+    width: 100%;
+    padding: 26px 24px;
+    border-radius: 0;
+    margin: 0;
+  
+    .header-navigation {
+      a {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18.79px;
+      }
+  
+      .roadmap-title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26.01px;
+        letter-spacing: -0.25px;
+      }
+    }
+  }
+}
