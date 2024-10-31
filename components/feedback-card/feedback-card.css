@@ -17,12 +17,16 @@
   .card-texts {
     margin-bottom: 10px;
 
-    h4 {
-      color: #3a4374;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 26.01px;
-      letter-spacing: -0.25px;
+    .card-link {
+      text-decoration: none;
+
+      h4 {
+        color: #3a4374;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26.01px;
+        letter-spacing: -0.25px;
+      }
     }
 
     p {
@@ -60,19 +64,94 @@
       letter-spacing: -0.2222222238779068px;
     }
   }
-}
 
-.card:hover {
-  .card-texts {
-    h4 {
-      color: #4661E6;
+  .like-and-comments-mobile {
+    display: none;
+  }
+
+  &:hover {
+    .card-texts {
+      .card-link {
+        h4 {
+          color: #4661e6;
+        }
+      }
     }
   }
 }
 
-@media(width <= 1190px) {
+@media (width <= 1190px) {
   .card {
     margin: 0 auto;
     width: 689px;
+  }
+}
+
+@media (width <= 768px) {
+  .card {
+    margin: 0 auto;
+    width: 327px;
+    flex-direction: column;
+    padding: 24px;
+
+    .card-texts {
+      .card-link {
+        h4 {
+          color: #3a4374;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 18.79px;
+          letter-spacing: -0.1805555522441864px;
+        }
+      }
+
+      p {
+        color: #647196;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18.79px;
+      }
+
+      .card-category {
+        background-color: #f2f4ff;
+        color: #4661e6;
+        padding: 5px 16px;
+        border-radius: 10px;
+        display: inline-block;
+        margin-bottom: 18px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 18.79px;
+      }
+    }
+
+    .like-and-comments {
+      display: none;
+    }
+
+    .comments {
+      display: none;
+    }
+
+    .like-and-comments-mobile {
+      width: 263px;
+      display: flex;
+      justify-content: space-between;
+
+      .comments-mobile {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #cdd2ee;
+
+        p {
+          color: #3a4374;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 23.12px;
+          letter-spacing: -0.2222222238779068px;
+        }
+      }
+    }
   }
 }

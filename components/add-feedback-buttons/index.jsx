@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import "./add-feedback-button.css"
 import NewFeedbackForm from '../new-feedback-modal';
-import { Less } from '@/helpers/icons';
+import { Less, Plus } from '@/helpers/icons';
 
 export default function AddFeedbackButton() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,7 +12,7 @@ export default function AddFeedbackButton() {
 
     return (
         <div>
-            <button  className="add-feedback-button" onClick={openModal}>+ Add Feedback</button>
+            <button  className="add-feedback-button" onClick={openModal}><Plus /> Add Feedback</button>
 
             {isModalOpen && 
             (

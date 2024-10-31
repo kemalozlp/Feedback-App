@@ -125,3 +125,87 @@
     width: 689px;
   }
 }
+
+@media(width <= 768px) {
+  .comments-list {
+    width: 327px;
+    padding: 24px;
+
+    .comments-text {
+      p {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .comments-list {
+    width: 327px;
+    padding: 24px;
+  
+    .title {
+      h1 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26.01px;
+        letter-spacing: -0.25px;
+      }
+    }
+  
+    .comments-text {
+      .user-info {
+        .user-texts {
+          .name-surname {
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 18.79px;
+            letter-spacing: -0.1805555522441864px;
+          }
+  
+          .user-name {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18.79px;
+          }
+        }
+  
+        .reply-button {
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 18.79px;
+        }
+      }
+  
+      p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18.79px;
+      }
+  
+      .post-reply {
+        .post-comments {
+          margin-left: 0;
+        }
+  
+        .post-comments:focus {
+          cursor: text;
+        }
+  
+        .post-reply {
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 18.79px;
+          padding: 8px;
+        }
+      }
+  
+      .comment-next {
+        margin-left: 24px;
+
+        .user-info {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  
+}

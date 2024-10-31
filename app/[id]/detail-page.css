@@ -28,3 +28,13 @@
     width: 689px;
   }
 }
+
+@media (width <= 768px) {
+  .details-header {
+    width: 327px;
+  }
+
+  .detail-page {
+    width: 327px;
+  }
+}

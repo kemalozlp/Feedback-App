@@ -8,13 +8,14 @@
   font-weight: 700;
   line-height: 18.79px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .add-feedback-button:hover {
   background-color: #c75af6;
 }
-
-
 
 .modal {
   display: flex;
@@ -41,8 +42,6 @@
   cursor: pointer;
 }
 
-
-
 .back-button {
   display: flex;
   align-items: center;
@@ -65,5 +64,11 @@
 .back-button:hover {
   p {
     text-decoration: underline;
+  }
+}
+
+@media (width <= 768px) {
+  .likes {
+    flex-direction: row;
   }
 }
