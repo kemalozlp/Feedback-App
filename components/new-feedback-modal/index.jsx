@@ -1,11 +1,11 @@
-import { Plus } from "@/helpers/icons";
+import { PlusIcon } from "@/helpers/icons";
 import "./new-feedback.css";
 
 export default function NewFeedbackForm() {
     return (
         <div className="new-feedback">
                 <div className="circle">
-                    <Plus />
+                    <PlusIcon />
                 </div>
             <form>
                 <h1>Create New Feedback</h1>

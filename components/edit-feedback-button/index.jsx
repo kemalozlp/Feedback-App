@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import "./edit-feedback-button.css";
-import { Less } from "@/helpers/icons";
+import { LessIcon } from "@/helpers/icons";
 import EditFeedbackForm from "../edit-feedback-modal";
 
 export default function EditFeedbackButton() {
@@ -18,7 +18,7 @@ export default function EditFeedbackButton() {
         <div className="modal">
           <div className="modal-content">
             <button className="back-button" onClick={closeModal}>
-              <Less />
+              <LessIcon />
               <p>Go Back</p>
             </button>
 

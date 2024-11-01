@@ -1,13 +1,16 @@
 import Image from "next/image";
 import "./header.css";
 import AddFeedbackButton from "../add-feedback-buttons";
+import { getFeedback } from "@/utils/fetch";
 
-export default function Header() {
+export default async function Header() {
+    const data = await getFeedback();
+
     return (
         <header className="header">
             <div className="suggestions-counter">
                 <Image width={23} height={24} src="/image/logo.png" alt="" />
-                <p><span>6 </span>Suggestions</p>
+                <p><span>{data.length} </span>Suggestions</p>
             </div>
 
             <div className="short-by">

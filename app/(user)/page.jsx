@@ -2,10 +2,10 @@ import Image from "next/image";
 import Header from "@/components/header";
 import AddFeedbackButton from "@/components/add-feedback-buttons";
 import SideBar from "@/components/sidebar";
+import CardList from "@/components/feedback-card-lists";
 import "./user-home.css";
-import Card from "@/components/feedback-card";
 
-export default async function UserHome() {
+export default function UserHome() {
   return (
     <div className="container">
       <SideBar />
@@ -28,7 +28,7 @@ export default async function UserHome() {
         </div>
 
         <div className="card-lists">
-          <Card />
+          <CardList />
         </div>
       </div>
     </div>
