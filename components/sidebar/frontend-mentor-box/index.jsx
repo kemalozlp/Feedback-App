@@ -1,34 +1,41 @@
-"use client"
+"use client";
 
-import Link from "next/link";
+import { GoBackIcon, MenuIcon } from "@/helpers/icons";
+import { useState } from "react";
+import CategoryBox from "../category-box";
+import RoadmapBox from "../roadmap-box";
 
-export default function RoadmapBox({plannedData, progressData, liveData}) {
+export default function FrontendMentorBox() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className="roadmap-box">
-      <div className="roadmap-title">
-        <h3>Roadmap</h3>
-        <Link href="/roadmap">view</Link>
+    <div className="frontend-mentor">
+      <div className="texts">
+        <h3>Frontend Mentor</h3>
+        <p>Feedback Board</p>
       </div>
 
-      <ul className="roadmap-list">
-        <li className="planned-box">
-          <span>●</span>
-          <p>Planned</p>
-          <span>{plannedData}</span>
-        </li>
+      <div className="modal-buttons">
+        {open ? (
+          <button onClick={() => setOpen(false)}>
+            <GoBackIcon />
+          </button>
+        ) : (
+          <button onClick={() => setOpen(true)}>
+            <MenuIcon />
+          </button>
+        )}
+      </div>
 
-        <li className="in-progress-box">
-          <span>●</span>
-          <p>In-Progress</p>
-          <span>{progressData}</span>
-        </li>
-
-        <li className="live-box">
-          <span>●</span>
-          <p>Live</p>
-          <span>{liveData}</span>
-        </li>
-      </ul>
+      <div
+        className={open ? "dialog active" : "dialog"}
+        style={{ width: open ? "100%" : "0%" }}
+      >
+        <div className="dialog-content">
+          <CategoryBox />
+          <RoadmapBox />
+        </div>
+      </div>
     </div>
   );
 }
