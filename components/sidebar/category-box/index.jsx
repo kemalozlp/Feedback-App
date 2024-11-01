@@ -1,12 +1,11 @@
-export default function CategoryBox() {
+export default function CategoryBox({categories}) {
     return (
-        <div className="categories">
-            <button className="category-all">All</button>
-            <button className="category-item">UI</button>
-            <button className="category-item">UX</button>
-            <button className="category-item">Enhancement</button>
-            <button className="category-item">Bug</button>
-            <button className="category-item">Feature</button>
-        </div>
-    )
-}
+      <div className="categories">
+        <button className="category-all">All</button>
+        {categories?.map(x => (
+          <button className="category-item">{x}</button>
+        ))}
+      </div>
+    );
+  }
+  

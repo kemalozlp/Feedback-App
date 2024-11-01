@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Comments, UpVote } from "@/helpers/icons";
+import { CommentsIcon, UpVoteIcon } from "@/helpers/icons";
 import "./roadmap-lists.css";
 import Link from "next/link";
 
@@ -76,12 +76,12 @@ export default function RoadmapLists() {
                   className={liked === true ? "likes select-btn" : "likes"}
                   onClick={handleLike}
                 >
-                  <UpVote />
+                  <UpVoteIcon />
                   <p>{likes}</p>
                 </button>
 
                 <div className="comments">
-                  <Comments />
+                  <CommentsIcon />
                   <p>2</p>
                 </div>
               </div>
@@ -122,12 +122,12 @@ export default function RoadmapLists() {
                   className={liked === true ? "likes select-btn" : "likes"}
                   onClick={handleLike}
                 >
-                  <UpVote />
+                  <UpVoteIcon />
                   <p>{likes}</p>
                 </button>
 
                 <div className="comments">
-                  <Comments />
+                  <CommentsIcon />
                   <p>2</p>
                 </div>
               </div>
@@ -159,12 +159,12 @@ export default function RoadmapLists() {
                   className={liked === true ? "likes select-btn" : "likes"}
                   onClick={handleLike}
                 >
-                  <UpVote />
+                  <UpVoteIcon />
                   <p>{likes}</p>
                 </button>
 
                 <div className="comments">
-                  <Comments />
+                  <CommentsIcon />
                   <p>2</p>
                 </div>
               </div>
@@ -202,12 +202,12 @@ export default function RoadmapLists() {
                   className={liked === true ? "likes select-btn" : "likes"}
                   onClick={handleLike}
                 >
-                  <UpVote />
+                  <UpVoteIcon />
                   <p>{likes}</p>
                 </button>
 
                 <div className="comments">
-                  <Comments />
+                  <CommentsIcon />
                   <p>2</p>
                 </div>
               </div>

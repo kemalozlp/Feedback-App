@@ -1,11 +1,60 @@
 // FEEDBACK
 export const getFeedback = async () => {
   const response = await fetch(
-    "https://feedbackboardapi.muhammetcoskun.com.tr/feedback"
+    "https://feedbackboardapi.muhammetcoskun.com.tr/api/post/all"
   );
 
-  return response;
+  const data = response.json();
+  return data;
 };
+
+export const getFeedbackById = async (id) => {
+  const response = await fetch(
+    `https://feedbackboardapi.muhammetcoskun.com.tr/api/post/${id}`,
+    {
+      method: "GET",
+      headers: {
+        accept: "*/*"
+      }
+    }
+  );
+
+  const data = response.json();
+  return data;
+};
+
+export const getCategories = async (id) => {
+  const response = await fetch(
+    `https://feedbackboardapi.muhammetcoskun.com.tr/feedback/categories`,
+    {
+      method: "GET",
+      headers: {
+        accept: "*/*"
+      }
+    }
+  );
+
+  const data = response.json();
+  return data;
+};
+
+export const getCommentsById = async (id) => {
+  const response = await fetch(
+    `https://feedbackboardapi.muhammetcoskun.com.tr/api/comment/post/${id}`,
+    {
+      method: "GET",
+      headers: {
+        accept: "*/*"
+      }
+    }
+  );
+
+  const data = response.json();
+  return data;
+};
+
+
+
 
 export const deleteFeedback = async (id) => {
   const response = await fetch(

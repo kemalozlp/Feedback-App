@@ -1,4 +1,3 @@
-import { Pen } from "@/helpers/icons";
 import "./edit-feedback.css";
 import Image from "next/image";
 

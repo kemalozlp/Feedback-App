@@ -1,6 +1,6 @@
 import RoadmapLists from "@/components/roadmap-lists";
 import "./roadmap.css";
-import { Less } from "@/helpers/icons";
+import { LessIcon } from "@/helpers/icons";
 import Link from "next/link";
 import AddFeedbackButton from "@/components/add-feedback-buttons";
 
@@ -10,7 +10,7 @@ export default function Roadmap() {
       <div className="roadmap-header">
         <div className="header-navigation">
           <Link href="/">
-            <Less />
+            <LessIcon />
             Go Back
           </Link>
 
