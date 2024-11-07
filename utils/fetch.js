@@ -142,6 +142,8 @@ export const deleteComments = async (id) => {
 };
 
 export const postComments = async (formData) => {
+  const comment = formData.get("comment");
+  const id = formData.get("postid");
   const response = await fetch(
     "https://feedbackboardapi.muhammetcoskun.com.tr/api/comment/create",
     {
@@ -152,8 +154,8 @@ export const postComments = async (formData) => {
       },
       body: {
         "userId": "string",
-        "postId": 0,
-        "commentName": "string"
+        id,
+        comment
       }
     }
   );
