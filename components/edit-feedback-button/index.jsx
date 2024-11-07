@@ -5,7 +5,7 @@ import "./edit-feedback-button.css";
 import { LessIcon } from "@/helpers/icons";
 import EditFeedbackForm from "../edit-feedback-modal";
 
-export default function EditFeedbackButton() {
+export default function EditFeedbackButton({feedbackData, id}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -22,7 +22,7 @@ export default function EditFeedbackButton() {
               <p>Go Back</p>
             </button>
 
-            <EditFeedbackForm />
+            <EditFeedbackForm feedbackData={feedbackData} id={id} />
           </div>
         </div>
       )}
