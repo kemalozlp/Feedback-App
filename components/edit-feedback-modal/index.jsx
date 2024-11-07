@@ -1,19 +1,20 @@
+import { deletePost, editPost } from "../login/action";
 import "./edit-feedback.css";
 import Image from "next/image";
 
-export default function EditFeedbackForm() {
+export default function EditFeedbackForm({feedbackData, id}) {
     return (
         <div className="edit-feedback">
                 <div className="circle">
                     <Image width={23} height={23} src="/image/edit-logo.png"/>
                 </div>
-            <form>
+            <form action={editPost}>
                 <h1>Editing ‘Add a dark theme option’</h1>
-
+                <input type="hidden" name="editid" id="editid" value={id} />
                 <div className="form-item">
                     <label htmlFor="title">Feedback Title</label>
                     <p>Add a short, descriptive headline</p>
-                    <input type="text" name="title" id="title"/>
+                    <input type="text" name="title" id="title" placeholder={feedbackData.title}/>
                 </div>
 
                 <div className="form-item">
@@ -39,17 +40,20 @@ export default function EditFeedbackForm() {
                 </div>
 
                 <div className="form-item">
-                    <label htmlFor="title">Feedback Detail</label>
+                    <label htmlFor="detail">Feedback Detail</label>
                     <p>Include any specific comments on what should be improved, added, etc.</p>
-                    <input type="text" name="title" id="title"/>
+                    <input type="text" name="detail" id="detail" placeholder={feedbackData.detail}/>
                 </div>
 
                 <div className="form-buttons">
-                    <button className="delete">Delete</button>
                     <button className="cancel">Cancel</button>
                     <button className="add-new">Add Feedback</button>
                 </div>
             </form>
+                    <form action={deletePost}>
+                        <input type="hidden" name="editid" id="editid" value={id} />
+                        <button className="delete">Delete</button>
+                    </form>
         </div>
     )
 }

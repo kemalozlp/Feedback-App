@@ -4,8 +4,9 @@ import { UpVoteIcon } from "@/helpers/icons";
 import "./feedback-like.css";
 import React, { useState } from "react";
 
-export default function LikeButton() {
-  const [likes, setLikes] = useState(112);
+export default function LikeButton({ voteCount, postId }) {
+  console.log(voteCount)
+  const [likes, setLikes] = useState(voteCount);
   const [liked, setLiked] = useState(false);
 
   const handleLike = () => {

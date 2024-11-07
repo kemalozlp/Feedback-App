@@ -4,6 +4,7 @@ import { GoBackIcon, MenuIcon } from "@/helpers/icons";
 import { useState } from "react";
 import CategoryBox from "../category-box";
 import RoadmapBox from "../roadmap-box";
+import Link from "next/link";
 
 export default function FrontendMentorBox() {
   const [open, setOpen] = useState(false);
@@ -13,6 +14,7 @@ export default function FrontendMentorBox() {
       <div className="texts">
         <h3>Frontend Mentor</h3>
         <p>Feedback Board</p>
+        <Link className="login" href={"/login"}>Login</Link>
       </div>
 
       <div className="modal-buttons">

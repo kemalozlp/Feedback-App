@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import "./add-comment.css";
+import { postComments } from "@/utils/fetch";
+import { saveComment } from "../login/action";
 
-export default function AddComment() {
+export default function AddComment({id}) {
     const [text, setText] = useState("");
 
     const handleChange = (event) => {
@@ -13,12 +15,14 @@ export default function AddComment() {
     };
 
   return (
-    <div className="add-comment">
+    <form action={saveComment} className="add-comment">
       <h4>Add Comment</h4>
+      <input type="hidden" name="postid" id="postid" value={id} />
       <textarea
         placeholder="Type your comment here"
         value={text}
         onChange={handleChange}
+        name="comment"
       ></textarea>
 
       <div className="add-comment-footer">
@@ -27,6 +31,6 @@ export default function AddComment() {
           Post Comment
         </button>
       </div>
-    </div>
+    </form>
   );
 }
