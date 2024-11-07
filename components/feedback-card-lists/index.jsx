@@ -2,7 +2,7 @@ import LikeButton from "../feedback-like";
 import Link from "next/link";
 import { getFeedback } from "@/utils/fetch";
 import { CommentsIcon } from "@/helpers/icons";
-import "./feedback-card-list.css";
+ import "./feedback-card-list.css";
 
 export default async function CardList() {
   const data = await getFeedback();
