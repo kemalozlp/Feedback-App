@@ -3,8 +3,11 @@ import "./roadmap.css";
 import { LessIcon } from "@/helpers/icons";
 import Link from "next/link";
 import AddFeedbackButton from "@/components/add-feedback-buttons";
+import { getFeedback } from "@/utils/fetch";
 
-export default function Roadmap() {
+export default async function Roadmap() {
+  const data = await getFeedback();
+
   return (
     <div className="roadmap">
       <div className="roadmap-header">
@@ -20,7 +23,7 @@ export default function Roadmap() {
         <AddFeedbackButton/>
       </div>
 
-      <RoadmapLists />
+      <RoadmapLists data={data}/>
     </div>
   );
 }

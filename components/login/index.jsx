@@ -1,16 +1,18 @@
-import { login } from "./action"
-import "./login.css";
+"use client";
 
-export default function LoginPage() {
+import { loginUser } from "@/components/login/action.jsx";
+import { useFormState } from "react-dom";
+
+export default function Login() {
+  const [state, action] = useFormState(loginUser, null);
   return (
-    <div className="loginContainer">
-      <form action={login}>
-      <label htmlFor="email">Eposta:</label>
-      <input id="email" name="email" type="email" required placeholder="E-posta Giriniz" />
-      <label htmlFor="password">Şifre:</label>
-      <input id="password" name="password" type="password" required placeholder="********" />
-      <button className="btnLogin">Login</button> 
-    </form>
-    </div>
-  )
+    <>
+      {state?.error && <div>{state.error}</div>}
+      <form action={action}>
+        <input type="email" name="email" placeholder="E-posta Adresi" /> <br />
+        <input type="password" name="password" placeholder="Şifre" /> <br />
+        <button>Giriş Yap</button>
+      </form>
+    </>
+  );
 }

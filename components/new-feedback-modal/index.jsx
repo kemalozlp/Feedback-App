@@ -1,5 +1,6 @@
 import { PlusIcon } from "@/helpers/icons";
 import "./new-feedback.css";
+import { saveFeedback } from "../login/action";
 
 export default function NewFeedbackForm() {
     return (
@@ -7,7 +8,7 @@ export default function NewFeedbackForm() {
                 <div className="circle">
                     <PlusIcon />
                 </div>
-            <form>
+            <form action={saveFeedback}>
                 <h1>Create New Feedback</h1>
 
                 <div className="form-item">
@@ -29,9 +30,9 @@ export default function NewFeedbackForm() {
                 </div>
 
                 <div className="form-item">
-                    <label htmlFor="title">Feedback Detail</label>
+                    <label htmlFor="detail">Feedback Detail</label>
                     <p>Include any specific comments on what should be improved, added, etc.</p>
-                    <input type="text" name="title" id="title"/>
+                    <input type="text" name="detail" id="detail"/>
                 </div>
 
                 <div className="form-buttons">

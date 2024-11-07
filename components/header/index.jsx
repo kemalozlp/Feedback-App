@@ -4,26 +4,29 @@ import AddFeedbackButton from "../add-feedback-buttons";
 import { getFeedback } from "@/utils/fetch";
 
 export default async function Header() {
-    const data = await getFeedback();
+  const data = await getFeedback();
 
-    return (
-        <header className="header">
-            <div className="suggestions-counter">
-                <Image width={23} height={24} src="/image/logo.png" alt="" />
-                <p><span>{data.length} </span>Suggestions</p>
-            </div>
+  return (
+    <header className="header">
+      <div className="suggestions-counter">
+        <Image width={23} height={24} src="/image/logo.png" alt="" />
+        <p>
+          <span>{data.length} </span>Suggestions
+        </p>
+      </div>
 
-            <div className="short-by">
-                <p>Sort by :</p>
-                
-                <div className="filter-options">
-                    <p><input type="checkbox"/>deneme1</p>
-                    <p><input type="checkbox"/>deneme 2</p>
-                    <p><input type="checkbox"/>deneme 3</p>
-                </div>
-            </div>
+      <div className="short-by">
+        <label for="">Sort by :</label>
 
-            <AddFeedbackButton />
-        </header>
-    )
+        <select id="" name="" form="">
+          <option>Most Upvotes</option>
+          <option>Least Upvotes</option>
+          <option>Most Comments</option>
+          <option>Least Comments</option>
+        </select>
+      </div>
+
+      <AddFeedbackButton />
+    </header>
+  );
 }
