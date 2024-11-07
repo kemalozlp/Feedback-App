@@ -14,17 +14,18 @@ export default async function FeedbackDetailPage({ params }) {
   const feedbackData = await getFeedbackById(id);
   const commentsData = await getCommentsById(id);
 
+
   return (
     <div className="detail-page">
       <div className="details-header">
         <GoBack />
-        <EditFeedbackButton />
+        <EditFeedbackButton feedbackData={feedbackData} id={id} />
       </div>
 
       <div className="card">
         <div className="cardDetail">
           <div className="like-and-comments">
-            <LikeButton />
+            <LikeButton voteCount={feedbackData.voteCount} postId={id} />
           </div>
 
           <div className="card-texts">
@@ -50,7 +51,7 @@ export default async function FeedbackDetailPage({ params }) {
       </div>
 
       <Comments id={id} commentsData={commentsData} />
-      <AddComment />
+      <AddComment id={id} />
     </div>
   );
 }
