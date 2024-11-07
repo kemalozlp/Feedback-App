@@ -77,3 +77,72 @@ export async function saveFeedback(formData) {
 
   redirect("/");
 }
+
+
+export async function saveComment(formData) {
+  const comment = formData.get("comment");
+  const id = formData.get("postid");
+
+  const response = await fetch(
+    "https://feedbackboardapi.muhammetcoskun.com.tr/api/comment/create",
+    {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+        accept: "/",
+        Cookie: cookies().toString(),
+      },
+      body: JSON.stringify({
+        "userId": "d0b351b5-b6e6-428d-b866-db39720b9e44",
+        "postId": id,
+        "commentName": comment
+      }),
+    }
+  );
+
+  console.log(response);
+}
+
+export async function editPost (formData) {
+  const title = formData.get("title");
+  const detail = formData.get("detail");
+  const id = formData.get("editid");
+
+  const response = await fetch(
+    `https://feedbackboardapi.muhammetcoskun.com.tr/api/post/update${id}`,
+    {
+      method: "PUT",
+      headers: {
+        "Content-type": "application/json",
+        accept: "/",
+        Cookie: cookies().toString(),
+      },
+      body: JSON.stringify({
+        "title": title,
+        "detail": detail,
+        "categoryId": 1,
+        "status": 0
+      }),
+    }
+  );
+
+  console.log(response);
+}
+
+export async function deletePost (formData) {
+  const id = formData.get("editid");
+
+  const response = await fetch(
+    `https://feedbackboardapi.muhammetcoskun.com.tr/api/post/${id}`,
+    {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json",
+        accept: "*/*",
+        Cookie: cookies().toString(),
+      },
+    }
+  );
+
+  console.log(response);
+}
