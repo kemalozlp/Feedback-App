@@ -1,12 +1,11 @@
 "use client";
 
 import { UpVoteIcon } from "@/helpers/icons";
-import "./feedback-like.css";
 import React, { useState } from "react";
+import "./feedback-like.css";
 
-export default function LikeButton({ voteCount, postId }) {
-  console.log(voteCount)
-  const [likes, setLikes] = useState(voteCount);
+export default function LikeButton({ postId, like }) {
+  const [likes, setLikes] = useState(like);
   const [liked, setLiked] = useState(false);
 
   const handleLike = () => {

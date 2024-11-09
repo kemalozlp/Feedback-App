@@ -13,7 +13,7 @@ export default async function CardList() {
         <div className="card" key={i}>
           <div className="cardDetail">
             <div className="like-and-comments">
-              <LikeButton />
+              <LikeButton like={x.voteCount}/>
             </div>
 
             <div className="card-texts">

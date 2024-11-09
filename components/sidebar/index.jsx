@@ -16,7 +16,7 @@ export default async function SideBar() {
 
   return (
     <div className="sidebar">
-      <FrontendMentorBox />
+      <FrontendMentorBox categories={categories} plannedData={plannedData} progressData={progressData} liveData={liveData}/>
       <CategoryBox categories={categories} />
       <RoadmapBox plannedData={plannedData} progressData={progressData} liveData={liveData}/>
     </div>

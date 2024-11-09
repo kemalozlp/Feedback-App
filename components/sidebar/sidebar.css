@@ -10,10 +10,23 @@
       #a337f6 53.09%,
       #28a7ed 100%
     );
+
     width: 255px;
     height: 137px;
     border-radius: 10px;
-    padding: 62px 0px 0px 24px;
+    padding: 24px;
+
+    .login {
+      background-color: #ffffff;
+      color: #4661e6;
+      padding: 4px 8px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .login:hover {
+      background-color: #e7e9f3;
+    }
 
     .modal-buttons {
       display: none;
@@ -24,6 +37,7 @@
     }
 
     .texts {
+      margin-top: 24px;
       h3 {
         color: #ffffff;
         font-size: 20px;
@@ -158,24 +172,26 @@
     flex-direction: row;
     margin: 0 auto;
     gap: 10px;
-    
+
     .frontend-mentor {
       width: 223px;
       height: 178px;
-      padding: 103px 0px 0px 24px;
+
+      .texts {
+        margin-top: 64px;
+      }
     }
-  
+
     .categories {
       width: 223px;
       height: 178px;
     }
-  
+
     .roadmap-box {
       width: 223px;
       height: 178px;
     }
   }
-
 }
 
 @media (width <= 768px) {
@@ -192,8 +208,16 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: fixed;
+      top: 0;
+      
+      .login {
+        display: none;
+      }
 
       .texts {
+        margin-top: 0;
+        
         h3 {
           color: #ffffff;
           font-size: 15px;
@@ -242,6 +266,11 @@
           width: 271px;
           position: fixed;
           right: 0;
+
+          .login {
+            display: block;
+            width: 56px;
+          }
         }
       }
     }
