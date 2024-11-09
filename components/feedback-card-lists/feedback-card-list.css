@@ -93,6 +93,7 @@
     width: 327px;
     flex-direction: column;
     padding: 24px;
+    align-items: start;
 
     .card-texts {
       .card-link {
