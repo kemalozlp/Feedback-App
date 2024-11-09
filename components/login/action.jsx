@@ -75,6 +75,7 @@ export async function saveFeedback(formData) {
   );
 
   console.log(response);
+  redirect("/")
 }
 
 export async function saveComment(formData) {
@@ -99,6 +100,7 @@ export async function saveComment(formData) {
   );
 
   console.log(response);
+  redirect(`/${id}`)
 }
 
 export async function editPost(formData) {
@@ -142,5 +144,6 @@ export async function deletePost(formData) {
     }
   );
 
-  console.log(response);
+  // console.log(response);
+  redirect("/")
 }

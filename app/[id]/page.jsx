@@ -13,7 +13,7 @@ export default async function FeedbackDetailPage({ params }) {
 
   const feedbackData = await getFeedbackById(id);
   const commentsData = await getCommentsById(id);
-
+  // console.log(feedbackData)
 
   return (
     <div className="detail-page">
@@ -37,7 +37,7 @@ export default async function FeedbackDetailPage({ params }) {
 
         <div className="comments">
           <CommentsIcon />
-          <p>{feedbackData.voteCount}</p>
+          <p>{commentsData.length}</p>
         </div>
 
         <div className="like-and-comments-mobile">

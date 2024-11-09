@@ -6,10 +6,11 @@ import "./feedback-card-list.css";
 
 export default async function CardList() {
   const data = await getFeedback();
+  // console.log(data)
 
   return (
     <>
-      {data.map((x, i) => (
+      {data.reverse().map((x, i) => (
         <div className="card" key={i}>
           <div className="cardDetail">
             <div className="like-and-comments">
@@ -27,7 +28,7 @@ export default async function CardList() {
 
           <div className="comments">
             <CommentsIcon />
-            <p>{x.voteCount}</p>
+            <p>{x.commentCount}</p>
           </div>
 
           <div className="like-and-comments-mobile">

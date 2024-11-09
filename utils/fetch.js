@@ -1,7 +1,8 @@
 // FEEDBACK
 export const getFeedback = async () => {
   const response = await fetch(
-    "https://feedbackboardapi.muhammetcoskun.com.tr/api/post/all"
+    "https://feedbackboardapi.muhammetcoskun.com.tr/api/post/all",
+    {cache: "no-store"}
   );
 
   const data = response.json();
@@ -11,6 +12,7 @@ export const getFeedback = async () => {
 export const getFeedbackById = async (id) => {
   const response = await fetch(
     `https://feedbackboardapi.muhammetcoskun.com.tr/api/post/${id}`,
+    {cache: "no-store"},
     {
       method: "GET",
       headers: {
@@ -26,6 +28,7 @@ export const getFeedbackById = async (id) => {
 export const getCategories = async (id) => {
   const response = await fetch(
     `https://feedbackboardapi.muhammetcoskun.com.tr/feedback/categories`,
+    {cache: "no-store"},
     {
       method: "GET",
       headers: {
@@ -41,6 +44,7 @@ export const getCategories = async (id) => {
 export const getCommentsById = async (id) => {
   const response = await fetch(
     `https://feedbackboardapi.muhammetcoskun.com.tr/api/comment/post/${id}`,
+    {cache: "no-store"},
     {
       method: "GET",
       headers: {
@@ -59,6 +63,7 @@ export const getCommentsById = async (id) => {
 export const deleteFeedback = async (id) => {
   const response = await fetch(
     `https://feedbackboardapi.muhammetcoskun.com.tr/feedback/${id}`,
+    {cache: "no-store"},
     {
       method: "DELETE",
       headers: {
@@ -73,6 +78,7 @@ export const deleteFeedback = async (id) => {
 export const postFeedback = async (formData) => {
   const response = await fetch(
     "https://feedbackboardapi.muhammetcoskun.com.tr/feedback",
+    {cache: "no-store"},
     {
       method: "POST",
       headers: {
@@ -94,6 +100,7 @@ export const postFeedback = async (formData) => {
 export const putFeedback = async (id) => {
   const response = await fetch(
     `https://feedbackboardapi.muhammetcoskun.com.tr/feedback/${id}`,
+    {cache: "no-store"},
     {
       method: "PUT",
       headers: {
@@ -116,6 +123,7 @@ export const putFeedback = async (id) => {
 export const getComments = async (id) => {
   const response = await fetch(
     `https://feedbackboardapi.muhammetcoskun.com.tr/api/comment/post/${id}`,
+    {cache: "no-store"},
     {
       method: "GET",
       headers: {
@@ -130,6 +138,7 @@ export const getComments = async (id) => {
 export const deleteComments = async (id) => {
   const response = await fetch(
     `https://feedbackboardapi.muhammetcoskun.com.tr/api/comment/delete/${id}`,
+    {cache: "no-store"},
     {
       method: "DELETE",
       headers: {
@@ -146,6 +155,7 @@ export const postComments = async (formData) => {
   const id = formData.get("postid");
   const response = await fetch(
     "https://feedbackboardapi.muhammetcoskun.com.tr/api/comment/create",
+    {cache: "no-store"},
     {
       method: "POST",
       headers: {
@@ -166,6 +176,7 @@ export const postComments = async (formData) => {
 export const putComments = async (id) => {
   const response = await fetch(
     `https://feedbackboardapi.muhammetcoskun.com.tr/api/comment/update/${id}`,
+    {cache: "no-store"},
     {
       method: "PUT",
       headers: {
@@ -187,6 +198,7 @@ export const putComments = async (id) => {
 export const getVote = async () => {
   const response = await fetch(
     "https://feedbackboardapi.muhammetcoskun.com.tr/api/vote/all",
+    {cache: "no-store"},
     {
       method: "GET",
       headers: {
@@ -201,6 +213,7 @@ export const getVote = async () => {
 export const deleteVote = async (id) => {
   const response = await fetch(
     `https://feedbackboardapi.muhammetcoskun.com.tr/api/vote/delete/${id}`,
+    {cache: "no-store"},
     {
       method: "DELETE",
       headers: {
@@ -215,6 +228,7 @@ export const deleteVote = async (id) => {
 export const postVote = async () => {
   const response = await fetch(
     "https://feedbackboardapi.muhammetcoskun.com.tr/api/vote/create",
+    {cache: "no-store"},
     {
       method: "POST",
       headers: {

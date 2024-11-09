@@ -5,7 +5,6 @@ import "./comments.css";
 
 export default function Comments({ commentsData }) {
   const [replyOpen, setReplyOpen] = useState(false);
-  console.log(commentsData);
 
   function handleReplyChange() {
     if (replyOpen === true) {

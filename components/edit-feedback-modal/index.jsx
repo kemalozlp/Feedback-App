@@ -9,7 +9,7 @@ export default function EditFeedbackForm({ feedbackData, id }) {
         <Image width={23} height={23} src="/image/edit-logo.png" />
       </div>
 
-      <form action={editPost}>
+      <form>
         <h1>Editing ‘Add a dark theme option’</h1>
         <input type="hidden" name="editid" id="editid" value={id} />
         <div className="form-item">
@@ -61,12 +61,9 @@ export default function EditFeedbackForm({ feedbackData, id }) {
 
         <div className="form-buttons">
           <input type="hidden" name="editid" id="editid" value={id} />
-          <button className="delete" action={deletePost}>
-            Delete
-          </button>
-
+          <button className="delete" formAction={deletePost}>Delete</button>
           <button className="cancel">Cancel</button>
-          <button className="add-new">Edit Feedback</button>  
+          <button className="add-new" formAction={editPost}>Edit Feedback</button>
         </div>
       </form>
     </div>

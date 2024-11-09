@@ -13,7 +13,7 @@ export default function RoadmapLists({ data }) {
   const plannedData = data.filter((item) => item.status === 1);
   const progressData = data.filter((item) => item.status === 2);
   const livedData = data.filter((item) => item.status === 3);
-  console.log(plannedData);
+  // console.log(plannedData);
 
   const handleLike = () => {
     if (liked) {

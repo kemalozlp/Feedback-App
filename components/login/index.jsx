@@ -10,7 +10,7 @@ export default function Login() {
   return (
     <>
       {state?.error && <div>{state.error}</div>}
-      <Link href={"/"}>Geri Dön</Link>
+      <Link href={"/"} className="loginBack">Geri Dön</Link>
 
       <form action={action} className="loginForm">
         <input type="email" name="email" placeholder="E-posta Adresi" className="email"/>
