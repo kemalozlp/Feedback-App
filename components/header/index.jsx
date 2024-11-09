@@ -16,7 +16,7 @@ export default async function Header() {
       </div>
 
       <div className="short-by">
-        <label for="">Sort by :</label>
+        <label htmlFor="">Sort by :</label>
 
         <select id="" name="" form="">
           <option>Most Upvotes</option>

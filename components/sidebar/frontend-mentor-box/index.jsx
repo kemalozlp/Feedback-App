@@ -6,15 +6,22 @@ import CategoryBox from "../category-box";
 import RoadmapBox from "../roadmap-box";
 import Link from "next/link";
 
-export default function FrontendMentorBox() {
+export default function FrontendMentorBox({categories, plannedData, progressData, liveData}) {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="frontend-mentor">
+      <Link className="login" href={"/login"}>
+        Login
+      </Link>
+
+      {/* <Link className="login" href={"/login"}>
+        Logout
+      </Link> */}
+
       <div className="texts">
         <h3>Frontend Mentor</h3>
         <p>Feedback Board</p>
-        <Link className="login" href={"/login"}>Login</Link>
       </div>
 
       <div className="modal-buttons">
@@ -34,8 +41,12 @@ export default function FrontendMentorBox() {
         style={{ width: open ? "100%" : "0%" }}
       >
         <div className="dialog-content">
-          <CategoryBox />
-          <RoadmapBox />
+          <CategoryBox categories={categories} />
+          <RoadmapBox plannedData={plannedData} progressData={progressData} liveData={liveData} />
+
+          <Link className="login" href={"/login"}>
+            Login
+          </Link>
         </div>
       </div>
     </div>

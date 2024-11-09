@@ -59,6 +59,7 @@ export async function saveFeedback(formData) {
     "https://feedbackboardapi.muhammetcoskun.com.tr/api/post/create",
     {
       method: "POST",
+      cache: "no-store",
       headers: {
         "Content-type": "application/json",
         accept: "/",
@@ -74,10 +75,7 @@ export async function saveFeedback(formData) {
   );
 
   console.log(response);
-
-  redirect("/");
 }
-
 
 export async function saveComment(formData) {
   const comment = formData.get("comment");
@@ -93,9 +91,9 @@ export async function saveComment(formData) {
         Cookie: cookies().toString(),
       },
       body: JSON.stringify({
-        "userId": "d0b351b5-b6e6-428d-b866-db39720b9e44",
-        "postId": id,
-        "commentName": comment
+        userId: "d0b351b5-b6e6-428d-b866-db39720b9e44",
+        postId: id,
+        commentName: comment,
       }),
     }
   );
@@ -103,7 +101,7 @@ export async function saveComment(formData) {
   console.log(response);
 }
 
-export async function editPost (formData) {
+export async function editPost(formData) {
   const title = formData.get("title");
   const detail = formData.get("detail");
   const id = formData.get("editid");
@@ -118,10 +116,10 @@ export async function editPost (formData) {
         Cookie: cookies().toString(),
       },
       body: JSON.stringify({
-        "title": title,
-        "detail": detail,
-        "categoryId": 1,
-        "status": 0
+        title: title,
+        detail: detail,
+        categoryId: 1,
+        status: 0,
       }),
     }
   );
@@ -129,7 +127,7 @@ export async function editPost (formData) {
   console.log(response);
 }
 
-export async function deletePost (formData) {
+export async function deletePost(formData) {
   const id = formData.get("editid");
 
   const response = await fetch(
